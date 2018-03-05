@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="35266" started-at="2018-03-02T16:06:46Z" finished-at="2018-03-02T16:07:21Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:lucidity.bdd.testbase.TestRunner@29ee9faa]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group>
+    </groups>
+    <test name="Command line test" duration-ms="35266" started-at="2018-03-02T16:06:46Z" finished-at="2018-03-02T16:07:21Z">
+      <class name="lucidity.bdd.testbase.TestSetup">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:lucidity.bdd.testbase.TestSetup@6767c1fc]" name="beforeTest" is-config="true" duration-ms="8" started-at="2018-03-02T16:06:46Z" finished-at="2018-03-02T16:06:46Z">
+        </test-method>
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:lucidity.bdd.testbase.TestSetup@6767c1fc]" name="afterTest" is-config="true" duration-ms="8" started-at="2018-03-02T16:07:21Z" finished-at="2018-03-02T16:07:21Z">
+        </test-method>
+      </class>
+      <class name="lucidity.bdd.testbase.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:lucidity.bdd.testbase.TestRunner@29ee9faa]" name="setUpClass" is-config="true" duration-ms="265" started-at="2018-03-02T16:06:46Z" finished-at="2018-03-02T16:06:46Z">
+        </test-method>
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:lucidity.bdd.testbase.TestRunner@29ee9faa]" name="feature" duration-ms="34888" started-at="2018-03-02T16:06:46Z" description="Runs Cucumber Feature" finished-at="2018-03-02T16:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucidity Intranet]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:lucidity.bdd.testbase.TestRunner@29ee9faa]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2018-03-02T16:07:21Z" finished-at="2018-03-02T16:07:21Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="7" failures="0" name="lucidity.bdd.testbase.TestRunner" time="0.009" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\bin"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Lucidity BDD Test\CucumberTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Lucidity BDD Test\CucumberTest"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\RODELJ~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Lucidity BDD Test\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5154504164232736390.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Rodel Joseph Fabella/eclipse/java-oxygen/eclipse/jre/bin/server;C:/Users/Rodel Joseph Fabella/eclipse/java-oxygen/eclipse/jre/bin;C:/Users/Rodel Joseph Fabella/eclipse/java-oxygen/eclipse/jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\Rodel Joseph Fabella\AppData\Local\Microsoft\WindowsApps;C:\Users\Rodel Joseph Fabella\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Rodel Joseph Fabella\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Rodel Joseph Fabella"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Rodel Joseph Fabella"/>
+    <property name="java.class.path" value="C:\Users\Rodel Joseph Fabella\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\resources.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\rt.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\sunrsasign.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\jsse.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\jce.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\charsets.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\lib\jfr.jar;C:\Users\Rodel Joseph Fabella\eclipse\java-oxygen\eclipse\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Lucidity BDD Test\CucumberTest\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="Given For test &quot;Search&quot;, User opens &quot;Chrome&quot; and navigates to &quot;https://qa.luciditysoftware.com.au&quot;" time="0.008"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="And clicks &quot;/html/body/div[1]/div[13]&quot;" time="0"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="And inputs &quot;rj;//*[@id=&apos;username&apos;]&quot;" time="0"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="And inputs &quot;Welcome123;//*[@id=&apos;password&apos;]&quot;" time="0"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="And clicks &quot;//*[@id=&apos;admin_login&apos;]&quot;" time="0"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="Then verify Intranet header &quot;/html/body/div[2]/header/div/div[1]/span&quot; is displayed" time="0"/>
+  <testcase classname="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" name="| Search | Chrome | https://qa.luciditysoftware.com.au | /html/body/div[1]/div[13] | rj;//*[@id=&apos;username&apos;] | Welcome123;//*[@id=&apos;password&apos;] | //*[@id=&apos;admin_login&apos;] | /html/body/div[2]/header/div/div[1]/span |" time="0.001"/>
+</testsuite>
