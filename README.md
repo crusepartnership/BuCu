@@ -42,20 +42,19 @@ The above example is basic script that can be improved by inserting parameters f
 
 ```Gherkin
 Feature: Search feature for users
-
 Scenario: When a user searches, without spelling mistake, for a product name present in inventory. 
 All the products with similar name should be displayed
 
-Given User is on the main page of <ShopHomepage>
-And User inputs <SearchID> into <TxtSearchField>
-And User clicks <BtnSearch>
-Then verify search page updated with the <LstLaptop>
+Given User is on the main page of "<ShopHomepage>"
+And User inputs "<SearchID>" into "<TxtSearchField>"
+And User clicks "<BtnSearch>"
+Then verify search page updated with the "<LstLaptop>"
 
 Examples:
 | ShopHomepage | SearchID | TxtSearchField | BtnSearch | LstLaptop |
 | www.myshopingsite.com | Laptop | //*[@id='fields_search'] | //*[@id='btn_search'] | //list/*[@id='laptops'] |
 ```
-The objects inside <> are called parameters which Gherkin uses to identify variables which holds certain values which are defined on the *Examples* section based on their occurrence. These parameters may contain texts and object identifiers (object IDs, xpaths, etc.) which will be used to input data or other specific Selenium automated *steps/actions* on the target objects.
+The objects inside <> are called parameters which Gherkin uses to identify variables which holds certain values which are defined on the **Examples** section based on their occurrence. These parameters may contain texts and object identifiers (object IDs, xpaths, etc.) which will be used to input data or other specific Selenium automated *steps/actions* on the target objects.
 
 Tests on are run with the help of Maven which utilizes execution, reporting, documentation, and all other components on the framework.
 
