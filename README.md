@@ -1,19 +1,20 @@
 # BuCu
-Business Cucumber or Bucu is an automated testing framework which uses Cucumber to run tests written in a high-level (business) language. This language is called Gherkin which is then translated by the framework to run tests in Selenium. Cucumber is a BDD (Business Driven Development) based management tool.
+
+Business Cucumber or Bucu is an automated testing framework which uses Cucumber to run tests written in a high-level (business) language. This language is called Gherkin which is then translated by the framework to run tests in Selenium. Cucumber is a BDD (Business Driven Development) based automated test management tool.
+
 ---
 
-## Getting Started
+### Getting Started
+Cucumber framework runs on Java and for this, we've used Eclipse as the IDE. Eclipse provides as an array of readily available plugins which gives Cucumber more power and versatility.
 
-Cucumber framework runs on Java and for this, we've used Eclipse as the IDE. Eclipse provides as an array of readily available plugins which gives Cucumber more power and versatility. 
 ---
-
-In the meantime, the framework is only available on Windows OS.
----
-
 ### Prerequisites
 
 * Basic to advance knowledge on Java
 * Basic to advance knowledge on Selenium WebDriver
+
+_In the meantime, BuCu is only available on Windows OS._
+
 ---
 
 ### Installing
@@ -21,25 +22,25 @@ In the meantime, the framework is only available on Windows OS.
 To get started with the setup, please visit this [wiki](https://integralcs.atlassian.net/wiki/spaces/DEVOPS/pages/347832321).
 
 ---
-## Running the tests
+### Running the tests
 
 Tests on Cucumber framework are written on Gherkin (see example below).
-```
-*Feature*: Search feature for users
-This feature is very important because it will allow users to filter products
-*Scenario*: When a user searches, without spelling mistake, for a product name present in inventory. All the products with similar name should be displayed
-_Given_ User is on the main page of www.myshopingsite.com
-_When_ User searches for laptops
-_Then_ search page should be updated with the lists of laptops
-```
+
+**_Feature_**: Search feature for users<br><br>
+**_Scenario_**: When a user searches, without spelling mistake, for a product name present in inventory. All the products with similar name should be displayed<br><br>
+**_Given_** User is on the main page of www.myshopingsite.com<br>
+**_When_** User searches for laptops<br>
+**_Then_** search page should be updated with the lists of laptops<br>
+
+
 The above example is basic script that can be improved by inserting parameters for each step/action.
-```
-*Feature*: Search feature for users
-This feature is very important because it will allow users to filter products
-*Scenario*: When a user searches, without spelling mistake, for a product name present in inventory. All the products with similar name should be displayed
-_Given_ User is on the main page of www.myshopingsite.com
-_When_ User searches for laptops
-_Then_ search page should be updated with the lists of laptops
+
+```Gherkin
+Feature: Search feature for users
+Scenario: When a user searches, without spelling mistake, for a product name present in inventory. All the products with similar name should be displayed
+Given User is on the main page of www.myshopingsite.com
+When User searches for laptops
+Then search page should be updated with the lists of laptops
 ```
 
 
