@@ -3,10 +3,16 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)" preserve-order="true">
     <classes>
+      <class name="lucidity.bdd.testbase.TestSetup">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class>
       <class name="lucidity.bdd.testbase.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="2"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class>

@@ -66,15 +66,15 @@ public class TestFunctions {
 		
 		BDD_LOGS("TCDescription - "+TCDescription);
 
-		DateFormat screenshotFormat = new SimpleDateFormat("MM-dd-HH-mm-ss");
+		DateFormat screenshotFormat = new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss");
         Date date = new Date();
         FolderName = "Lucidity_Test_Report-" + TCName + "_" + screenshotFormat.format(date);
         
-        eReport = new ExtentReports(System.getProperty("user.dir")+"\\target\\"+FolderName+"\\"+TCName+".html");
+        eReport = new ExtentReports(System.getProperty("user.dir")+"/target/"+FolderName+"/"+TCName+".html");
 		
         eReport_test = eReport.startTest(TCName,"");
         
-        PropertyConfigurator.configure(System.getProperty("user.dir")+"\\src\\test\\java\\lucidity\\bdd\\configs\\log4j.properties");
+        PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/test/java/lucidity/bdd/configs/log4j.properties");
         
         logger =  Logger.getLogger("devpinoyLogger");
         
@@ -85,8 +85,8 @@ public class TestFunctions {
 	 ****************************************************************************************/
 	public void ReportResults(String sResult, String sMessage, boolean bScreenshot) throws Exception{
 		
-		DateFormat screenshotFormat = new SimpleDateFormat("MM-dd-HH-mm-ss");
-        Date date = new Date();
+		DateFormat screenshotFormat = new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss");
+		Date date = new Date();
         
         
         //String sScreenshot = this.getClass().getSimpleName() + screenshotFormat.format(date);
@@ -185,11 +185,16 @@ public class TestFunctions {
 	public void launchBrowser(String sBrowserType, String sUrl) throws Exception {
 		
 		TestFunctions.BrowserType = sBrowserType;
+		boolean isMacOs = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 		
 		BDD_LOGS("Launching "+sBrowserType+" browser and navigating to "+sUrl);
 		
 		try {
 			if(sBrowserType.contains("Edge")) {
+				if (isMacOs) {
+					System.out.print("Edge is not available on Mac.  Exiting...");
+					System.exit(1);
+				}
 				System.setProperty("webdriver.edge.driver",System.getProperty("user.dir")+"/webdriver/MicrosoftWebDriver.exe");
 				
 				driver = new EdgeDriver();
@@ -198,11 +203,11 @@ public class TestFunctions {
 				options.addArguments("test-type");
 				options.addArguments("chrome.switches", "--disable-extensions");
 		        options.addArguments("start-maximized");
-		        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/webdriver/chromedriver.exe");  
+		        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/webdriver/chromedriver"+ ((!isMacOs) ? "exe" : ""));  
 		        
 				driver = new ChromeDriver(options);
 			}else if(sBrowserType.contains("Firefox")){
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/webdriver/geckodriver.exe");  
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/webdriver/geckodriver"+ ((!isMacOs) ? "exe" : ""));  
 				
 				driver = new FirefoxDriver();
 			}
@@ -210,7 +215,6 @@ public class TestFunctions {
 		} catch (Exception e){
 			ReportResults("FAIL", "Unexpected error/exception occurred: " + e.getMessage(), true);
             System.out.println(e.getMessage()+ "/n" + e.getStackTrace());
-             
 		}
 			
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
