@@ -27,9 +27,9 @@ public class TestSetup extends TestFunctions{
 	
 	public void moveReportResults(){
 		
-		String resultPath = System.getProperty("user.dir")+"\\target\\"+FolderName;
-		String failedResultPath = System.getProperty("user.dir")+"\\target\\FAILED\\"+FolderName;
-		String passedResultPath = System.getProperty("user.dir")+"\\target\\PASSED\\"+FolderName;
+		String resultPath = System.getProperty("user.dir")+"/target/"+FolderName;
+		String failedResultPath = System.getProperty("user.dir")+"/target/FAILED/"+FolderName;
+		String passedResultPath = System.getProperty("user.dir")+"/target/PASSED/"+FolderName;
 		
 		
 		System.out.println(resultPath);
@@ -37,8 +37,8 @@ public class TestSetup extends TestFunctions{
 		System.out.println(passedResultPath);
 		
 		//Create the Passed and Failed folder in Target Folder.
-		File PassedFolder = new File(System.getProperty("user.dir")+"\\target\\PASSED");
-		File FailedFolder = new File(System.getProperty("user.dir")+"\\target\\FAILED");
+		File PassedFolder = new File(System.getProperty("user.dir")+"/target/PASSED");
+		File FailedFolder = new File(System.getProperty("user.dir")+"/target/FAILED");
 		
 		if (!PassedFolder.exists()){
 			PassedFolder.mkdir();
@@ -67,9 +67,9 @@ public class TestSetup extends TestFunctions{
 					
 				    for(int i = 0; i < content.length; i++) {
 				    	if (content[i].isFile()){
-				    		File afile= new File(resultPath+"\\"+content[i].getName());
+				    		File afile= new File(resultPath+"/"+content[i].getName());
 				    		
-				    		if (afile.renameTo(new File(failedResultPath+"\\"+content[i].getName()))) {
+				    		if (afile.renameTo(new File(failedResultPath+"/"+content[i].getName()))) {
 				    			System.out.println("Results moved to Failed folder");
 				    		} else {
 				    			System.out.println("Results not moved to Failed folder");
@@ -100,9 +100,9 @@ public class TestSetup extends TestFunctions{
 					
 				    for(int i = 0; i < content.length; i++) {
 				    	if (content[i].isFile()){
-				    		File afile= new File(resultPath+"\\"+content[i].getName()); 
+				    		File afile= new File(resultPath+"/"+content[i].getName()); 
 
-				    		if (afile.renameTo(new File(passedResultPath+"\\"+content[i].getName()))){
+				    		if (afile.renameTo(new File(passedResultPath+"/"+content[i].getName()))){
 				    			System.out.println("Results moved to Passed folder");
 				    		}else{
 				    			System.out.println("Results not moved to Passed folder");

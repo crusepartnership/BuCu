@@ -86,7 +86,7 @@ public class TestFunctions {
 	public void ReportResults(String sResult, String sMessage, boolean bScreenshot) throws Exception{
 		
 		DateFormat screenshotFormat = new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss");
-		Date date = new Date();
+        Date date = new Date();
         
         
         //String sScreenshot = this.getClass().getSimpleName() + screenshotFormat.format(date);
@@ -215,6 +215,7 @@ public class TestFunctions {
 		} catch (Exception e){
 			ReportResults("FAIL", "Unexpected error/exception occurred: " + e.getMessage(), true);
             System.out.println(e.getMessage()+ "/n" + e.getStackTrace());
+             
 		}
 			
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
